@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(custom.css);
+
+.affix-top,.affix{
+		position: static;
+}
+
+@media (min-width: 979px) {
+	#sidebar.affix-top {
+		position: static;
+		margin-top:30px;
+		width:228px;
+	}
+	
+	#sidebar.affix {
+		position: fixed;
+		top:70px;
+		width:228px;
+	}
+}
+
+#sidebar li.active {
+	border:0 #eee solid;
+	border-right-width:4px;
+}

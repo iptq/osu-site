@@ -1,0 +1,6 @@
+RewriteEngine on
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+
+RewriteRule ^u/(.*)$ /user.php?user=$1 [NC,L]
+RewriteRule ^p/(.*)$ /pages/$1.php [NC,L]
